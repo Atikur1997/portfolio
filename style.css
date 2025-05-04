@@ -24,6 +24,8 @@
     margin-right: auto;
 }
 
+
+
 .navbar a {
     font-size: 18px;
     color: #333;
@@ -64,18 +66,23 @@
     line-height: 1.2;
 }
 
+
 .home-content h3 {
     font-size: 32px;
+
 }
 
 .home-content h3 span {
     color: #37a1f2;
 }
 
+
 .home-content p {
     font-size: 16px;
     margin: 15px 0;
 }
+
+
 
 .social-media a {
     display: inline-flex;
@@ -91,12 +98,14 @@
     color: #37a1f2;
     margin: 5px 15px 25px 0;
     transition: 2s;
+
 }
 
 .social-media a:hover {
     background: #37a1f2;
     color: #f0f3fd;
 }
+
 
 .btn {
     display: inline-block;
@@ -150,6 +159,8 @@
 #dark-container .logo,
 #dark-container .navbar a {
     color: #f0f3fd;
+    clip-path: circle(150% at 0% 0%);
+
 }
 
 #dark-container .navbar a:hover {
@@ -159,6 +170,4 @@
 .active#container,
 .active#dark-container {
     z-index: 1;
-    clip-path: circle(160% at 0% 0%);
-    transition: 1.5s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
