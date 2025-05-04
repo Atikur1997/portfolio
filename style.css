@@ -159,7 +159,6 @@
 #dark-container .logo,
 #dark-container .navbar a {
     color: #f0f3fd;
-    clip-path: circle(150% at 0% 0%);
 
 }
 
@@ -170,4 +169,6 @@
 .active#container,
 .active#dark-container {
     z-index: 1;
+    clip-path: circle(160% at 0% 0%);
+    transition: 1.5s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
