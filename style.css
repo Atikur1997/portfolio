@@ -242,4 +242,24 @@
     .logo {
         font-size: 22px;
     }
+
+    .home-image {
+        position: relative;
+        /* changed from absolute */
+        width: 100%;
+        max-width: 450px;
+        margin: 30px auto 0;
+        pointer-events: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        max-height: 450px;
+    }
+
 }
