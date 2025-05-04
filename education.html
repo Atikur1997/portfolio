@@ -38,6 +38,9 @@
             color: #37a1f2;
             position: relative;
         }
+        .header a{
+            text-decoration: none;
+        }
 
         .section-title::after {
             content: '';
@@ -90,6 +93,43 @@
             font-weight: bold;
         }
 
+        .header {
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            background-color: transparent;
+            padding: 30px 10%;
+            display: flex;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 26px;
+            color: #333;
+            font-weight: 600;
+            margin-right: auto;
+        }
+
+        .navbar a {
+            font-size: 18px;
+            color: #333;
+            font-weight: 500;
+            margin-right: 35px;
+            transition: 0.5s;
+        }
+
+        .navbar a:hover {
+            color: #37a1f2;
+        }
+
+        .toggle-icon {
+            font-size: 24px;
+            cursor: pointer;
+            display: flex;
+        }
+
+
         /* === Responsive === */
         @media (max-width: 768px) {
             .education {
@@ -130,39 +170,52 @@
 </head>
 
 <body>
-
-    <section class="education" id="education">
-        <h2 class="section-title">Education</h2>
-        <div class="education-content">
-            <div class="edu-item">
-                <h3>M.Sc. in Computer Science</h3>
-                <p><strong>Jahangirnagar University</strong> — 2024 to 2025</p>
-                <p><span>Department</span>Information and Technology (IT)</p>
-                <p><span>CGPA</span>3.50</p>
+    <div class="container active" id="container">
+        <header class="header">
+            <a href="index.html" class="logo">Atikur Rahman</a>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="education.html" target="_blank">Education</a>
+                <a href="skills.html" target="_blank">Skills</a>
+                <a href="#">Contact</a>
+            </nav>
+            <div class="toggle-icon">
+                <i class='bx bx-moon'></i>
             </div>
+        </header>
 
-            <div class="edu-item">
-                <h3>B.Sc. in Civil Engineering</h3>
-                <p><strong>International University of Business Agriculture and Technology</strong> — 2021</p>
-                <p><span>Department</span>Civil Engineering</p>
-                <p><span>CGPA</span>3.59</p>
-            </div>
+        <section class="education" id="education">
+            <h2 class="section-title">Education</h2>
+            <div class="education-content">
+                <div class="edu-item">
+                    <h3>M.Sc. in Computer Science</h3>
+                    <p><strong>Jahangirnagar University</strong> — 2024 to 2025</p>
+                    <p><span>Department</span>Information and Technology (IT)</p>
+                    <p><span>CGPA</span>3.50</p>
+                </div>
 
-            <div class="edu-item">
-                <h3>Higher Secondary Certificate (HSC)</h3>
-                <p><strong>Biam Model School and College</strong> — 2014</p>
-                <p><span>Division</span>Science</p>
-                <p><span>GPA</span>5.00</p>
-            </div>
+                <div class="edu-item">
+                    <h3>B.Sc. in Civil Engineering</h3>
+                    <p><strong>International University of Business Agriculture and Technology</strong> — 2021</p>
+                    <p><span>Department</span>Civil Engineering</p>
+                    <p><span>CGPA</span>3.59</p>
+                </div>
 
-            <div class="edu-item">
-                <h3>Secondary School Certificate (SSC)</h3>
-                <p><strong>Dinajpur Zilla School</strong> — 2012</p>
-                <p><span>Division</span>Science</p>
-                <p><span>GPA</span>4.88</p>
+                <div class="edu-item">
+                    <h3>Higher Secondary Certificate (HSC)</h3>
+                    <p><strong>Biam Model School and College</strong> — 2014</p>
+                    <p><span>Division</span>Science</p>
+                    <p><span>GPA</span>5.00</p>
+                </div>
+
+                <div class="edu-item">
+                    <h3>Secondary School Certificate (SSC)</h3>
+                    <p><strong>Dinajpur Zilla School</strong> — 2012</p>
+                    <p><span>Division</span>Science</p>
+                    <p><span>GPA</span>4.88</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
 </body>
 
