@@ -163,6 +163,83 @@
     transition: 1.5s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
-/* for education html  */
+/* === Responsive Design === */
+@media (max-width: 992px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+        padding: 100px 5% 0;
+    }
 
-/* education.html part end here   */
+    .home-content {
+        max-width: 100%;
+    }
+
+    .home-content h1 {
+        font-size: 42px;
+    }
+
+    .home-content h3 {
+        font-size: 26px;
+    }
+
+    .home-image {
+        position: relative;
+        width: 80%;
+        top: unset;
+        margin-top: 30px;
+    }
+
+    .home-image img {
+        height: auto;
+        max-width: 100%;
+        border-radius: 20px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 5%;
+    }
+
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .navbar a {
+        margin: 10px 15px;
+        font-size: 16px;
+    }
+
+    .toggle-icon {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .home-content h1 {
+        font-size: 32px;
+    }
+
+    .home-content h3 {
+        font-size: 22px;
+    }
+
+    .btn {
+        padding: 10px 24px;
+        font-size: 14px;
+    }
+
+    .social-media a {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+}
